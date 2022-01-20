@@ -1,6 +1,6 @@
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
-import logo from '../images/logo.png'
+import logo from '../images/logo.png';
 import React from 'react';
 
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                     {/* blue-glassmorphism color */}
                 <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
                 {[
-                    <a href='#testimonials' className='page-scroll'>Market</a>, 
+                    <a href='#Footer' className='page-scroll'>Market</a>, 
                     <a href='#testimonials' className='page-scroll'>Exchange</a>,
                     <a href='#testimonials' className='page-scroll'>Tutorials</a>,
                     <a href='#testimonials' className='page-scroll'>Wallets</a>].map(
