@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+Input::placeholder {
+  color: rgb(194, 194, 194);
+  opacity: 1;
+}
+
+Input:placeholder-shown {
+  border: 1px solid rgb(134, 134, 134);
+}

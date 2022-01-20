@@ -13,13 +13,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cryptoHead{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .gradient-bg-welcome {
   background-color:#0f0e13;
   /* background-image: url("../src/images/backgroundNavbar.jpg"); */
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../src/images/backgroundNavbar1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)) ,url("../src/images/bg.jpg");
 /* Full height */
   height: 100%; 
-  background-position: relative;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

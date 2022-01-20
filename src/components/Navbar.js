@@ -19,10 +19,10 @@ const Navbar = () => {
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {[
-                    <a href='#Footer' className='page-scroll'>Market</a>, 
-                    <a href='#testimonials' className='page-scroll'>Exchange</a>,
-                    <a href='#testimonials' className='page-scroll'>Tutorials</a>,
-                    <a href='#testimonials' className='page-scroll'>Wallets</a>
+                    <a href='' className='page-scroll'>Market</a>, 
+                    <a href='' className='page-scroll'>Exchange</a>,
+                    <a href='' className='page-scroll'>About</a>,
+                    <a href='' className='page-scroll'>Wallets</a>
                 ].map((item, index) => (
                     <NavBarItem key={item + index} title={item} />
                 ))}
@@ -45,10 +45,10 @@ const Navbar = () => {
                     {/* blue-glassmorphism color */}
                 <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
                 {[
-                    <a href='#Footer' className='page-scroll'>Market</a>, 
-                    <a href='#testimonials' className='page-scroll'>Exchange</a>,
-                    <a href='#testimonials' className='page-scroll'>Tutorials</a>,
-                    <a href='#testimonials' className='page-scroll'>Wallets</a>].map(
+                    <a href='' className='page-scroll'>Market</a>, 
+                    <a href='' className='page-scroll'>Exchange</a>,
+                    <a href='' className='page-scroll'>About</a>,
+                    <a href='' className='page-scroll'>Wallets</a>].map(
                         (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
                     )}
                 </ul>
