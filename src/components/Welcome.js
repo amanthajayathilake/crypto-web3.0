@@ -71,7 +71,7 @@ const Welcome = () => {
           {/* <SiEthereum fontSize={21} color="#fff" /> */}
           </h1><br/>
           <p style={{color: "white", fontWeight: 300}} >
-            Explore the crypto world. Buy and sell cryptocurrencies easily on Crypto Web 3.0. Explore the crypto world. Buy and sell cryptocurrencies easily on Crypto Web 3.0. You need to install Metamask to transfer Ethereum.
+            Explore the crypto world. Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet. Buy and sell cryptocurrencies easily on Crypto Web 3.0. You need to install Metamask to transfer Ethereum.
           </p>
           {!currentAccount && (
             <button
@@ -101,7 +101,7 @@ const Welcome = () => {
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
               Blockchain
             </div>
-          </div> */}
+          </div> */}<br/>
           <div style={bgImg} className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
@@ -142,21 +142,22 @@ const Welcome = () => {
             </div>
           </div> */}
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center bg-gray-800/30">
-            <h3 style={{color:"white"}}>Enter Details</h3>
+            <h3 style={{color:"white", fontSize: "20px", fontWeight: 400}}>Enter Transaction Details</h3><br/>
+            <div className="h-[1px] w-full bg-gray-400 my-2" /><br/>
             <Input placeholder="Wallet Address" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETHEREUM)" name="amount" type="number" handleChange={handleChange} />
             <Input placeholder="Image (Gif)" name="keyword" type="text" handleChange={handleChange} />
             <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
-
+            <br/>
             <div className="h-[1px] w-full bg-gray-400 my-2" />
-
+            <br/>
             {isLoading
               ? <Loader />
               : (
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="text-white w-full mt-2 border-[1px] p-2 border-[white] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                  className="text-white w-full mt-2 border-[1px] p-2 border-[#fe8c00] hover:bg-[#fe8c00] rounded-full cursor-pointer"
                 >
                   Transfer Now
                 </button>

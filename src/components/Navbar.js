@@ -26,8 +26,8 @@ const Navbar = () => {
                 ].map((item, index) => (
                     <NavBarItem key={item + index} title={item} />
                 ))}
-                <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-                    Login
+                <li className="bg-[#fe8c00] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#e57e00]">
+                    <span style={{color:"black", fontWeight:"500"}}>Login</span>
                 </li>
             </ul>
             <div className="flex relative">

@@ -21,35 +21,32 @@ const Services = () => (
   <div className="flex w-full justify-center items-center gradient-bg-services">
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
       <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
-          Services that we
-          <br />
-          continue to improve
-        </h1>
+      <h1 className="cryptoHead" style={{color: "white", fontSize: "60px", fontWeight: 700}}>
+          Our Services
+          </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer
+        Today, billions of people can’t open bank accounts, others have their payments blocked. Ethereum's decentralized finance (DeFi) system never sleeps or discriminates. With just an internet connection, you can send, receive, borrow, earn interest, and even stream funds anywhere in the world.
         </p>
       </div>
 
       <div className="flex-1 flex flex-col justify-start items-center">
-        <ServiceCard
-          color="bg-[#2952E3]"
-          title="Security gurantee"
-          icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
-        />
-        <ServiceCard
-          color="bg-[#8945F8]"
-          title="Best exchange rates"
-          icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
-        />
-        <ServiceCard
+      <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
+        />
+        <ServiceCard
+          color="bg-[#2952E3]"
+          title="Safe and secure"
+          icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
+        />
+        <ServiceCard
+          color="bg-[#8945F8]"
+          title="24/7 support"
+          icon={<BiSearchAlt fontSize={21} className="text-white" />}
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
         />
       </div>
     </div>
